@@ -8,15 +8,19 @@
 body {
     margin: 0 auto;
     width: 80%;
-    max-width: 520px;
+    max-width: 600px;
     padding: 10px;
+    background: linear-gradient(to right, #efeff1, #e0e0f6);
+
 }
 
-form {
-    margin: 0 auto;
-    border:black;
-    border: 2 px;
+section {
+    padding:50px;
+    border: 2px solid #173aff;
+    border-radius:10px;
+    background: white;
 }
+
 
 .d-flex {
     display: flex;
@@ -39,25 +43,43 @@ input, select {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
+    border-radius:10px;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
     box-sizing: border-box;
 }
 
-input[type=radio], input[type=checkbox] {
+input[type=text], input[type=password]  {
+    padding:10px;
+    border:0 bisque;
+    border-radius:10px;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+
+input[type=radio], input[type=checkbox]{
     width: 24px;
     height: 24px;
 }
 
+
 input:focus, select:focus {
-    background-color: lightblue;
+    background-color: rgb(186, 218, 228);
 }
 
 button[type=submit] {
+    appearance:none;
+    -webkit-appearance:none;
     margin-top: 10px;
     padding: 10px 5px;
+    border: 0ch;
+    width: 30%;
+    background-color:#173aff;
+    color:#fff;
+    border-radius:10px;
+    box-sizing: border-box;
 }
 
 .form-error {
-    color: red;
+    color: rgb(210, 27, 27);
     font-size: 14px;
     display: block;
     display: none;

@@ -9,7 +9,7 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="form">
+    <section>
         <form name="myForm" method="post" onsubmit="return validateForm();" action="index.html"> 
             <div class="form-group">
                 <label for="name">Имя</label>
@@ -37,7 +37,7 @@
                 <input type="password" name="passwd2" id="passwd2">
             </div>
             <div class="form-group d-flex">
-                <label class="form-error" id="gender_error">Поле не долхно быть пустым!</label>
+                <label class="form-error" id="gender_error">Поле не должно быть пустым!</label>
                 <div class="form-group">
                     <input type="radio" id="male" name="gender">
                     <label for="male">Мужской</label>
@@ -63,7 +63,7 @@
             </div>
             <button type="submit">Отправить</button>
         </form>
-    </div>
+    </section>
 <script src="app.js"></script>
 </body>
 </html>
