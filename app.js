@@ -45,8 +45,6 @@ function validateForm() {
     }
 
     let gender = document.forms['myForm']['gender'].value
-    let male = document.forms['myForm']['male'].checked
-    let female = document.forms['myForm']['female'].checked
     console.log(gender)
     if (!male && !female) {
         document.getElementById('gender_error').style.display = 'block'
@@ -60,7 +58,11 @@ function validateForm() {
     request.open('POST', './server.php')
     request.setRequestHeader("Content-type", "application/json;charset=UTF-8")
     let data = {
-        name: name
+        name_: name,
+        second_name:second_name,
+        email: email,
+        passwd: passwd2,
+        gender: gender
     }
     request.send(JSON.stringify(data))
     request.onreadystatechange = function () {
