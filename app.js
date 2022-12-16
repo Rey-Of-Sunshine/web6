@@ -58,11 +58,11 @@ function validateForm() {
     request.open('POST', './server.php')
     request.setRequestHeader("Content-type", "application/json;charset=UTF-8")
     let data = {
-        name_: name,
-        second_name:second_name,
-        email: email,
-        passwd: passwd2,
-        gender: gender
+        name: name,
+        s_name:second_name,
+        em: email,
+        pass: passwd2,
+        gend: gender
     }
     request.send(JSON.stringify(data))
     request.onreadystatechange = function () {
