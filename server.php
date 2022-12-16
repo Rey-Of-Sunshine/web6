@@ -19,7 +19,7 @@ echo "Connected successfully";
 $data=json_decode(file_get_contents("php://input"), true);
 
 $sql = "INSERT INTO user (name_,second_name,email,passwd,gender)
-VALUES ('" . $data['name'] . "', '" . $data['second_name'] . "', '" . $data['email'] . "', '" . $data['passwd'] . "', '" . $data['gender'] . "')";
+VALUES ('" . $data['name'] . "', '" . $data['s_name'] . "', '" . $data['em'] . "', '" . $data['pass'] . "', '" . $data['gend'] . "')";
 /*VALUES ('John', 'Doe', 'john@example.com', '1235', 'male')";
 */
 if ($conn->query($sql) === TRUE) {

@@ -45,8 +45,9 @@ function validateForm() {
     }
 
     let gender = document.forms['myForm']['gender'].value
+    let gend = document.forms['myForm']['gender'].id
     console.log(gender)
-    if (!male && !female) {
+    if (!gender) {
         document.getElementById('gender_error').style.display = 'block'
     }
     else {
@@ -55,6 +56,9 @@ function validateForm() {
      
 
     let request = new XMLHttpRequest
+    /*if (nmBool && snmBool && emailBool && psBool && gnBool){
+        
+    }*/
     request.open('POST', './server.php')
     request.setRequestHeader("Content-type", "application/json;charset=UTF-8")
     let data = {
