@@ -29,7 +29,7 @@
             </div>
             <div class="form-group">
                 <label for="passwd1">Пароль</label>
-                <label class="form-error" id="passwd1_error">Поле не долхно быть пустым!</label>
+                <label class="form-error" id="passwd1_error">Поле не должно быть пустым!</label>
                 <input type="password" name="passwd1" id="passwd1">
             </div>
             <div class="form-group">
